@@ -46,13 +46,13 @@
   }
 
   .heading{
-   display: block;
-   font-size: 11vh;
+   padding-left: 19rem; 
+  padding-right: 20.1rem;
+   font-size: 10.8vh;
    background:linear-gradient(to top left, #c708b7, rgb(224, 142, 156));
    justify-content: center;
    position: absolute;
-   padding-left: 25%;
-   padding-right: 23.72%;
+  
    font-family: 'Times New Roman', Times, serif;
    text-decoration:underline;
   } 
