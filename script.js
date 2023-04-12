@@ -5,9 +5,9 @@ let overlay= document.querySelector('.overlay');
 let hidden= document.querySelector('.hidden');
 let modal = document.querySelector('.modal');
 let close = document.querySelector('.close');
-let height=parseInt(document.querySelector('.height').value);
-let weight=parseInt(document.querySelector('.weight').value);
-let sanket=(weight/height**2);
+let height=parseFloat(document.querySelector('.height').value);
+let weight=parseFloat(document.querySelector('.weight').value);
+let sanket=parseFloat(weight/height**2);
 
 
 let ram=function(){ 
@@ -33,9 +33,9 @@ let enter=function(e){
        modal.classList.remove('hidden');
        overlay.classList.remove('hidden');
    
-let height=parseInt(document.querySelector('.height').value);
-let weight=parseInt(document.querySelector('.weight').value);
-let sanket=(weight/height**2);
+let height=parseFloat(document.querySelector('.height').value);
+let weight=parseFloat(document.querySelector('.weight').value);
+let sanket=parseFloat(weight/height**2);
    if(height!=height && weight!=weight ){
     document.querySelector('.value').textContent = 'Enter a valid input☠️';
 }else{
@@ -46,9 +46,9 @@ overlay.classList.remove('hidden');
 }}
 
 let jay=function(){
-    let height=parseInt(document.querySelector('.height').value);
-let weight=parseInt(document.querySelector('.weight').value);
-let sanket=(weight/height**2);
+    let height=parseFloat(document.querySelector('.height').value);
+let weight=parseFloat(document.querySelector('.weight').value);
+let sanket=parseFloat(weight/height**2);
     if(!height && !weight && height===0){
         document.querySelector('.value').textContent = 'Enter a valid input☠️';
     }else{
@@ -61,9 +61,9 @@ let sanket=(weight/height**2);
 let again=function(){
     modal.classList.add('hidden');
    overlay.classList.add('hidden');
-    let height=parseInt(document.querySelector('.height').value=0.0);
-    let weight=parseInt(document.querySelector('.weight').value=0.0);
-    let sanket=(weight/height**2);
+    let height=parseFloat(document.querySelector('.height').value=0.0);
+    let weight=parseFloat(document.querySelector('.weight').value=0.0);
+    let sanket=parseFloat(weight/height**2);
     document.querySelector('.weight').textContent = ' ';
     document.querySelector('.height').textContent = ' ';
     document.querySelector('.value').textContent = 'Enter a valid input☠️';
